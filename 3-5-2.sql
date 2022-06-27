@@ -14,5 +14,5 @@ VALUES
 
 select
   stamp
-  ,substring(referrer from 'https?://([^/]*)') ,host(referrer) as referrer_host
+  ,host(referrer) as referrer_host
   from access_log;
