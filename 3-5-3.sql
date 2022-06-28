@@ -15,4 +15,5 @@ VALUES
 
 select stamp, url
 ,regexp_extract(url, '//[^/]+([^?#]+)') as path
+,regexp_extract(url, 'id=([^&]*)') as id
 from access_log;
