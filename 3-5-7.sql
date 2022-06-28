@@ -3,4 +3,4 @@ select stamp
 ,extract(month from stamp) as month
 ,extract(day from stamp) as day
 ,extract(hour from stamp) as hour
-from (select cast('2016-01-30 12:00:00' as timestamp) as stamp) as t
+from (select cast('2016-01-30 12:00:00' as timestamp) as stamp) as t;
